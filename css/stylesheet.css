@@ -1,0 +1,1013 @@
+/* CSS RESET (ERIC MEYER) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+html, body {
+	background-color: white;
+	height: 100%;
+}
+
+body {
+
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 450px) {
+	
+	body {
+		margin: 10px;
+	}
+	
+	header {
+		top: 0;
+		width: 100%;
+		height: 50%;
+		background-image: url(../images/sb-sunset.jpg);
+		background-size: cover;
+		background-position: center;
+		transition: all 1s ease;
+	}
+	
+	#main-nav {
+		height: 80px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	#main-nav img {
+		height: 30px;
+		margin-left: 20px;
+	}
+	
+	nav ul a {
+		display: none;
+		color: white;
+		text-decoration: none;
+		margin-right: 20px;
+		word-spacing: 1.5em;
+	}
+	
+	nav ul li {
+		display: inline;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: .75em;
+		letter-spacing: .2em;
+	}
+	
+	#color-overlay {
+		position: fixed;
+		height: 90%;
+		width: 100%;
+		background-color: black;
+		opacity: 0;
+		pointer-events: none;
+	}
+	
+	#header-container {
+		height: 100%;
+		width: 100%;
+		margin-top: -80px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+		#header-title h1 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 9.25vw;
+		font-weight: 100;
+		letter-spacing: .15em;
+	}
+	
+	#header-title h2 {
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font-size: 3.5vw;
+	}
+	
+	
+	#gray {
+		color: #838383;
+	}
+	
+	#header-title {
+		margin-left: 5vw;
+		
+	}
+	
+	#header-container p {
+		font-weight: 100;
+		font-size: .9em;
+		letter-spacing: .1em;
+		color: white;
+		width: 80%;
+		margin-top: 15px;
+	}
+	
+	#main-content {
+		position: relative;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		height: auto;
+		min-height: 100%;
+		margin-top: 10px;
+	}
+	
+	#main-content p {
+		font-size: 3.25vw;
+	}
+	
+	/* COMMERCIAL SECTION */ 
+	
+	#commercial-banner {
+		background-image: url(../images/uh-books.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
+		height: 55vw;
+		width: 100%;
+	}
+	
+	#commercial-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 25%, rgba(255,255,255, .85) 60%);
+	}
+	
+	#commercial-description {
+		width: 40%;
+		margin-right: 3%;
+	}
+	
+	#commercial-description h3 {
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+	}
+	
+	#commercial-description p {
+		margin-top: 5px;
+	}
+	
+	.project-row {
+		flex-direction: row;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.col-mobile {
+		height: 55vw;
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+	}
+	
+	.left {
+		width: 100%;
+	}
+	
+	.right {
+		width: 100%;
+	}
+	
+	.village-thumbnail {
+		background-image: url(../images/vpr-brian.jpg);
+	}
+	
+	.candice-thumbnail {
+		background-image: url(../images/candice2.jpg);
+	}
+	
+	.stonewall-thumbnail {
+		background-image: url(../images/stonewall3.jpg);
+	}
+	
+	.vacant-thumbnail {
+		background-image: url(../images/vacant-2.jpg);
+	}
+	
+	.cut-thumbnail {
+		background-image: url(../images/CUT.jpg);
+	}
+	
+	.uh-thumbnail-1 {
+		background-image: url(../images/uh-be-bold.jpg);
+	}
+	
+	.uh-thumbnail-2 {
+		background-image: url(../images/urban-home-wonderland.jpg);
+	}
+	
+	.caption {
+		background-color: rgba(0,0,0, .8);
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+
+	.caption:hover {
+		opacity: 1;
+} 
+	
+	/* NARRATIVE SECTION */ 
+	
+	#narrative-banner {
+		height: 55vw;
+		width: 100%;
+		background-image: url(../images/stonewall.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 8px;
+	}
+	
+	#narrative-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-start;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,0) 45%, rgba(0,0,0, .7) 90%);
+	}
+	
+	#narrative-description {
+		width: 40%;
+		margin-left: 4%;
+	}
+	
+	#narrative-description h3 {
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#narrative-description p {
+		color: white;
+		margin-top: 5px;
+	}
+	
+	#experimental-banner {
+		height: 55vw;
+		width: 100%;
+		background-image: url(../images/sb-beach.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+		margin-top: 8px;
+	}
+	
+	#experimental-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 15%, rgba(22,23,27, .7) 60%);
+	}
+	
+	#experimental-description {
+		width: 40%;
+		margin-right: 3%;
+	}
+	
+	#experimental-description h3 {
+		text-transform: uppercase;
+		font-size: 1em;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#experimental-description p {
+		color: white;
+		margin-top: 5px;
+	}
+	
+}
+
+/* TABLETS */
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+	
+	body {
+		margin: 10px;
+	}
+	
+	header {
+		top: 0;
+		width: 100%;
+		height: 50%;
+		background-image: url(../images/sb-sunset.jpg);
+		background-size: cover;
+		background-position: center;
+		transition: all 1s ease;
+	}
+	
+	#main-nav {
+		height: 100px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	#main-nav img {
+		height: 9vw;
+		margin-left: 20px;
+	}
+	
+	nav ul a {
+		display: none;
+		color: white;
+		text-decoration: none;
+		margin-right: 20px;
+		word-spacing: 1.5em;
+	}
+	
+	nav ul li {
+		display: inline;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: .75em;
+		letter-spacing: .2em;
+	}
+	
+	#color-overlay {
+		position: fixed;
+		height: 90%;
+		width: 100%;
+		background-color: black;
+		opacity: 0;
+		pointer-events: none;
+	}
+	
+	#header-container {
+		height: 100%;
+		width: 100%;
+		margin-top: -80px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+	#header-title h1 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 9.25vw;
+		font-weight: 100;
+		letter-spacing: .15em;
+	}
+	
+	#header-title h2 {
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font-size: 3.5vw;
+	}
+	
+	
+	#gray {
+		color: #838383;
+	}
+	
+	#header-title {
+		margin-left: 5vw;
+	}
+	
+	#header-container p {
+		font-weight: 100;
+		font-size: .9em;
+		letter-spacing: .1em;
+		color: white;
+		width: 70%;
+		margin-top: 15px;
+	}
+	
+	#main-content {
+		position: relative;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		height: auto;
+		min-height: 100%;
+		margin-top: 10px;
+	}
+	
+	/* COMMERCIAL SECTION */ 
+	
+	#commercial-banner {
+		background-image: url(../images/uh-books.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
+		height: 55vw;
+		width: 100%;
+	}
+	
+	#commercial-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 25%, rgba(255,255,255, .85) 60%);
+	}
+	
+	#commercial-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#commercial-description h3 {
+		font-size: 1.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+	}
+	
+	#commercial-description p {
+		font-weight: 300;
+		margin-top: 10px;
+	}
+	
+	.project-row {
+		flex-direction: row;
+		flex-wrap: wrap;
+		display: flex;
+		margin-top: 10px;
+		justify-content: center;
+	}
+	
+	.col-mobile {
+		height: 27.5vw;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.middle {
+		margin-top: 10px;
+	}
+	
+	.left {
+		width: 48.5%;
+		margin-right: 5px;
+	}
+	
+	.right {
+		width: 49%;
+		margin-left: 5px;
+	}
+	
+	.village-thumbnail {
+		background-image: url(../images/vpr-brian.jpg);
+	}
+	
+	.candice-thumbnail {
+		background-image: url(../images/candice2.jpg);
+	}
+	
+	.stonewall-thumbnail {
+		background-image: url(../images/stonewall3.jpg);
+	}
+	
+	.vacant-thumbnail {
+		background-image: url(../images/vacant-2.jpg);
+	}
+	
+	.cut-thumbnail {
+		background-image: url(../images/CUT.jpg);
+	}
+	
+	.uh-thumbnail-1 {
+		background-image: url(../images/uh-be-bold.jpg);
+	}
+	
+	.uh-thumbnail-2 {
+		background-image: url(../images/urban-home-wonderland.jpg);
+	}
+	
+	.caption {
+		background-color: rgba(0,0,0, .8);
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+
+	.caption:hover {
+		opacity: 1;
+} 
+	
+	/* NARRATIVE SECTION */ 
+	
+	#narrative-banner {
+		height: 55vw;
+		width: 100%;
+		background-image: url(../images/stonewall.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+	}
+	
+	#narrative-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-start;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,0) 45%, rgba(0,0,0, .7) 90%);
+	}
+	
+	#narrative-description {
+		width: 40%;
+		margin-left: 5%;
+	}
+	
+	#narrative-description h3 {
+		font-size: 1.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#narrative-description p {
+		color: white;
+		margin-top: 10px;
+	}
+	
+	#experimental-banner {
+		height: 55vw;
+		width: 100%;
+		background-image: url(../images/sb-beach.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+		margin-top: 10px;
+	}
+	
+	#experimental-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 15%, rgba(22,23,27, .7) 60%);
+	}
+	
+	#experimental-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#experimental-description h3 {
+		text-transform: uppercase;
+		font-size: 1.25em;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#experimental-description p {
+		color: white;
+		margin-top: 10px;
+	}
+	
+}
+
+/* SMALL DESKTOP */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+	
+	body {
+		margin: 16px;
+	}
+	
+	header {
+		top: 0;
+		width: 100%;
+		height: 70%;
+		background-image: url(../images/sb-sunset.jpg);
+		background-size: cover;
+		background-position: center;
+		transition: all 2s;
+	}
+	
+	#main-nav {
+		height: 100px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	#main-nav img {
+		height: 70px;
+		margin-left: 20px;
+	}
+	
+	nav ul a {
+		color: white;
+		text-decoration: none;
+		margin-right: 20px;
+		word-spacing: 1.5em;
+	}
+	
+	nav ul li {
+		display: inline;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: .75em;
+		letter-spacing: .2em;
+	}
+	
+	#color-overlay {
+		position: fixed;
+		height: 90%;
+		width: 100%;
+		background-color: black;
+		opacity: 0;
+		pointer-events: none;
+	}
+	
+	#header-container {
+		height: 100%;
+		width: 100%;
+		margin-top: -80px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+	#header-title h1 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 4.5em;
+		font-weight: 100;
+		letter-spacing: .15em;
+	}
+	
+	#header-title h2 {
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font-size: 1.5em;
+	}
+	
+	
+	#gray {
+		color: #838383;
+	}
+	
+	#header-title {
+		margin-left: 5vw;
+		
+	}
+	
+	#header-container p {
+		font-weight: 100;
+		font-size: 1em;
+		letter-spacing: .1em;
+		color: white;
+		width: 500px;
+		margin-top: 15px;
+	}
+	
+	#main-content {
+		position: relative;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		height: auto;
+		min-height: 100%;
+		margin-top: 16px;
+	}
+	
+	#main-content p {
+		letter-spacing: .1em;
+		font-size: 1em;
+	}
+	
+	/* COMMERCIAL SECTION */ 
+	
+	#commercial-banner {
+		background-image: url(../images/uh-books.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
+		height: 45vw;
+		width: 100%;
+	}
+	
+	#commercial-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 25%, rgba(255,255,255, .85) 60%);
+	}
+	
+	#commercial-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#commercial-description h3 {
+		font-size: 2.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+	}
+	
+	#commercial-description p {
+		font-weight: 300;
+		margin-top: 15px;
+	}
+	
+	.project-row {
+		flex-wrap: wrap;
+		flex-direction: row;
+		display: flex;
+		justify-content: center;
+		margin-top: 16px;
+	}
+	
+	.col-1 {
+		background-size: cover;
+		background-position: center;
+		width: 32.8%;
+		height: 26vw
+
+	}
+	
+	.col-2 {
+		width: 65%;
+		height: 26vw;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.middle {
+		margin-top: 16px;
+	}
+	
+	.left {
+		margin-right: 8px;
+	}
+	
+	.right {
+		margin-left: 8px;
+	}
+	
+	.village-thumbnail {
+		background-image: url(../images/vpr-brian.jpg);
+	}
+	
+	.candice-thumbnail {
+		background-image: url(../images/candice2.jpg);
+	}
+	
+	.stonewall-thumbnail {
+		background-image: url(../images/stonewall3.jpg);
+	}
+	
+	.vacant-thumbnail {
+		background-image: url(../images/vacant-2.jpg);
+	}
+	
+	.cut-thumbnail {
+		background-image: url(../images/CUT.jpg);
+	}
+	
+	.uh-thumbnail-1 {
+		background-image: url(../images/uh-be-bold.jpg);
+	}
+	
+	.uh-thumbnail-2 {
+		background-image: url(../images/urban-home-wonderland.jpg);
+	}
+	
+	.caption {
+		background-color: rgba(0,0,0, .8);
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+
+	.caption:hover {
+		opacity: 1;
+} 
+	
+	/* NARRATIVE SECTION */ 
+	
+	#narrative-banner {
+		height: 45vw;
+		width: 100%;
+		background-image: url(../images/stonewall.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 16px;
+	}
+	
+	#narrative-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-start;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,0) 45%, rgba(0,0,0, .7) 90%);
+	}
+	
+	#narrative-description {
+		width: 40%;
+		margin-left: 5%;
+	}
+	
+	#narrative-description h3 {
+		font-size: 2.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#narrative-description p {
+		color: white;
+		font-weight:100;
+		margin-top: 15px;
+	}
+	
+	#experimental-banner {
+		height: 45vw;
+		width: 100%;
+		background-image: url(../images/sb-beach.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 16px;
+	}
+	
+	#experimental-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 15%, rgba(22,23,27, .7) 60%);
+	}
+	
+	#experimental-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#experimental-description h3 {
+		text-transform: uppercase;
+		font-size: 2.25em;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#experimental-description p {
+		color: white;
+		font-weight: 100;
+		margin-top: 15px;
+	}
+
+}
+
+/* MEDIUM DESKTOP */
+
+@media only screen and (min-width: 1201px) {
+	
+	html {
+		display: none;
+	}
+		
+}
+
+/* LARGE DESKTOP */
+
+@media only screen and (min-width: 1700px) {
+	html {
+		display: none;
+	}
+	
+}
