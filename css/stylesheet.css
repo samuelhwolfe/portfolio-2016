@@ -540,12 +540,12 @@ body {
 	}
 	
 	.left {
-		width: 48.5%;
+		width: 48.8%;
 		margin-right: 5px;
 	}
 	
 	.right {
-		width: 49%;
+		width: 48.8%;
 		margin-left: 5px;
 	}
 	
@@ -688,7 +688,7 @@ body {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
 	
 	body {
-		margin: 16px;
+		margin: 10px;
 	}
 	
 	header {
@@ -798,7 +798,7 @@ body {
 		flex-direction: column;
 		height: auto;
 		min-height: 100%;
-		margin-top: 16px;
+		margin-top: 10px;
 	}
 	
 	#main-content h3 {
@@ -858,34 +858,34 @@ body {
 		flex-direction: row;
 		display: flex;
 		justify-content: center;
-		margin-top: 16px;
+		margin-top: 10px;
 	}
 	
 	.col-1 {
 		background-size: cover;
 		background-position: center;
-		width: 32.8%;
+		width: 33%;
 		height: 26vw
 
 	}
 	
 	.col-2 {
-		width: 65%;
+		width: 65.6%;
 		height: 26vw;
 		background-size: cover;
 		background-position: center;
 	}
 	
 	.middle {
-		margin-top: 16px;
+		margin-top: 10px;
 	}
 	
 	.left {
-		margin-right: 8px;
+		margin-right: 5px;
 	}
 	
 	.right {
-		margin-left: 8px;
+		margin-left: 5px;
 	}
 	
 	.village-thumbnail {
@@ -965,7 +965,7 @@ body {
 		background-image: url(../images/stonewall.jpg);
 		background-size: cover;
 		background-position: center;
-		margin-top: 16px;
+		margin-top: 10px;
 	}
 	
 	#narrative-box-container {
@@ -1006,7 +1006,7 @@ body {
 		background-image: url(../images/sb-beach.jpg);
 		background-size: cover;
 		background-position: center;
-		margin-top: 16px;
+		margin-top: 10px;
 	}
 	
 	#experimental-box-container {
