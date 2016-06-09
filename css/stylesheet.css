@@ -269,6 +269,29 @@ body {
 		opacity: 1;
 } 
 	
+	#main-content a {
+		text-decoration: none;
+	}
+.caption ul {
+		text-decoration: none;
+		padding: 10px;
+		border: 2px solid white;
+		list-style-type: none;
+	}
+	
+	.caption ul li {
+		font-size: .75em;
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: .2em;
+	}
+	
+	.italic {
+		font-style: italic;
+	}
+	
 	/* NARRATIVE SECTION */ 
 	
 	#narrative-banner {
@@ -591,10 +614,34 @@ body {
 		opacity: 0;
 		transition: opacity 1s ease;
 	}
+	
+	#main-content a {
+		text-decoration: none;
+	}
 
 	.caption:hover {
 		opacity: 1;
 } 
+	
+	.caption ul {
+		text-decoration: none;
+		padding: 10px;
+		border: 2px solid white;
+		list-style-type: none;
+	}
+	
+	.caption ul li {
+		font-size: .75em;
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: .2em;
+	}
+	
+	.italic {
+		font-style: italic;
+	}
 	
 	/* NARRATIVE SECTION */ 
 	
@@ -1046,18 +1093,719 @@ body {
 /* MEDIUM DESKTOP */
 
 @media only screen and (min-width: 1201px) {
-	
-	html {
-		display: none;
+	body {
+		margin: 10px;
 	}
+	
+	header {
+		top: 0;
+		width: 100%;
+		height: 80%;
+		background-image: url(../images/sb-sunset.jpg);
+		background-size: cover;
+		background-position: center;
+		transition: all 2s;
+	}
+	
+	header h2 {
+		font-weight: 100;
+	}
+	
+	#main-nav {
+		height: 100px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	#main-nav img {
+		height: 60px;
+		margin-left: 20px;
+	}
+	
+	nav ul a {
+		color: white;
+		text-decoration: none;
+		margin-right: 20px;
+		word-spacing: 1.5em;
+	}
+	
+	nav ul li {
+		display: inline;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: .75em;
+		letter-spacing: .2em;
+	}
+	
+	#color-overlay {
+		position: fixed;
+		height: 90%;
+		width: 100%;
+		background-color: black;
+		opacity: 0;
+		pointer-events: none;
+	}
+	
+	#header-container {
+		height: 100%;
+		width: 100%;
+		margin-top: -80px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+	#header-title h1 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 4.5em;
+		font-weight: 100;
+		letter-spacing: .15em;
+	}
+	
+	#header-title h2 {
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font-size: 1.5em;
+	}
+	
+	
+	#gray {
+		color: #838383;
+	}
+	
+	#header-title {
+		margin-left: 5vw;
 		
+	}
+	
+	#header-container p {
+		font-weight: 100;
+		font-size: 1em;
+		letter-spacing: .1em;
+		color: white;
+		width: 500px;
+		margin-top: 15px;
+	}
+	
+	#main-content {
+		position: relative;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		height: auto;
+		min-height: 100%;
+		margin-top: 10px;
+	}
+	
+	#main-content h3 {
+		font-weight: 100;
+	}
+	
+	
+	#main-content p {
+		letter-spacing: .1em;
+		font-size: 1em;
+	}
+	
+	/* COMMERCIAL SECTION */ 
+	
+	#commercial-banner {
+		background-image: url(../images/uh-books.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
+		height: 45vw;
+		width: 100%;
+	}
+	
+	#commercial-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 25%, rgba(255,255,255, .85) 60%);
+	}
+	
+	#commercial-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#commercial-description h3 {
+		font-size: 2.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+	}
+	
+	#commercial-description p {
+		font-weight: 300;
+		margin-top: 15px;
+	}
+	
+	.project-row {
+		flex-wrap: wrap;
+		flex-direction: row;
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	
+	.col-1 {
+		background-size: cover;
+		background-position: center;
+		width: 33%;
+		height: 26vw
+
+	}
+	
+	.col-2 {
+		width: 65.6%;
+		height: 26vw;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.middle {
+		margin-top: 10px;
+	}
+	
+	.left {
+		margin-right: 5px;
+	}
+	
+	.right {
+		margin-left: 5px;
+	}
+	
+	.village-thumbnail {
+		background-image: url(../images/vpr-brian.jpg);
+	}
+	
+	.candice-thumbnail {
+		background-image: url(../images/candice2.jpg);
+	}
+	
+	.stonewall-thumbnail {
+		background-image: url(../images/stonewall3.jpg);
+	}
+	
+	.vacant-thumbnail {
+		background-image: url(../images/vacant-2.jpg);
+	}
+	
+	.cut-thumbnail {
+		background-image: url(../images/CUT.jpg);
+	}
+	
+	.uh-thumbnail-1 {
+		background-image: url(../images/uh-be-bold.jpg);
+	}
+	
+	.uh-thumbnail-2 {
+		background-image: url(../images/urban-home-wonderland.jpg);
+	}
+	
+	.caption {
+		background-color: rgba(0,0,0, .8);
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+	
+	#main-content a {
+		text-decoration: none;
+	}
+
+	.caption:hover {
+		opacity: 1;
+} 
+	
+	.caption ul {
+		padding: 10px;
+		border: 2px solid white;
+		list-style-type: none;
+	}
+	
+	.caption ul li {
+		font-size: .75em;
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: .2em;
+	}
+	
+	.italic {
+		font-style: italic;
+	}
+	/* NARRATIVE SECTION */ 
+	
+	#narrative-banner {
+		height: 45vw;
+		width: 100%;
+		background-image: url(../images/stonewall.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+	}
+	
+	#narrative-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-start;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,0) 45%, rgba(0,0,0, .7) 90%);
+	}
+	
+	#narrative-description {
+		width: 40%;
+		margin-left: 5%;
+	}
+	
+	#narrative-description h3 {
+		font-size: 2.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#narrative-description p {
+		color: white;
+		font-weight:100;
+		margin-top: 15px;
+	}
+	
+	#experimental-banner {
+		height: 45vw;
+		width: 100%;
+		background-image: url(../images/sb-beach.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+	}
+	
+	#experimental-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 15%, rgba(22,23,27, .7) 60%);
+	}
+	
+	#experimental-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#experimental-description h3 {
+		text-transform: uppercase;
+		font-size: 2.25em;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#experimental-description p {
+		color: white;
+		font-weight: 100;
+		margin-top: 15px;
+	}
+
+
 }
 
 /* LARGE DESKTOP */
 
 @media only screen and (min-width: 1700px) {
-	html {
-		display: none;
+
+	body {
+		margin: 10px;
 	}
 	
+	header {
+		top: 0;
+		width: 100%;
+		height: 80%;
+		background-image: url(../images/sb-sunset.jpg);
+		background-size: cover;
+		background-position: center;
+		transition: all 2s;
+	}
+	
+	header h2 {
+		font-weight: 100;
+	}
+	
+	#main-nav {
+		height: 100px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	#main-nav img {
+		height: 60px;
+		margin-left: 20px;
+	}
+	
+	nav ul a {
+		color: white;
+		text-decoration: none;
+		margin-right: 20px;
+		word-spacing: 1.5em;
+	}
+	
+	nav ul li {
+		display: inline;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: .75em;
+		letter-spacing: .2em;
+	}
+	
+	#color-overlay {
+		position: fixed;
+		height: 90%;
+		width: 100%;
+		background-color: black;
+		opacity: 0;
+		pointer-events: none;
+	}
+	
+	#header-container {
+		height: 100%;
+		width: 100%;
+		margin-top: -80px;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		display: flex;
+		align-items: center;
+	}
+	
+	
+	#header-title h1 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 4.5em;
+		font-weight: 100;
+		letter-spacing: .15em;
+	}
+	
+	#header-title h2 {
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font-size: 1.5em;
+	}
+	
+	
+	#gray {
+		color: #838383;
+	}
+	
+	#header-title {
+		margin-left: 5vw;
+		
+	}
+	
+	#header-container p {
+		font-weight: 100;
+		font-size: 1em;
+		letter-spacing: .1em;
+		color: white;
+		width: 500px;
+		margin-top: 15px;
+	}
+	
+	#main-content {
+		position: relative;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		height: auto;
+		min-height: 100%;
+		margin-top: 10px;
+	}
+	
+	#main-content h3 {
+		font-weight: 100;
+	}
+	
+	
+	#main-content p {
+		letter-spacing: .1em;
+		font-size: 1em;
+	}
+	
+	/* COMMERCIAL SECTION */ 
+	
+	#commercial-banner {
+		background-image: url(../images/uh-books.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
+		height: 45vw;
+		width: 100%;
+	}
+	
+	#commercial-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 25%, rgba(255,255,255, .85) 60%);
+	}
+	
+	#commercial-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#commercial-description h3 {
+		font-size: 2.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+	}
+	
+	#commercial-description p {
+		font-weight: 300;
+		margin-top: 15px;
+	}
+	
+	.project-row {
+		flex-wrap: wrap;
+		flex-direction: row;
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	
+	.col-1 {
+		background-size: cover;
+		background-position: center;
+		width: 33%;
+		height: 26vw
+
+	}
+	
+	.col-2 {
+		width: 65.6%;
+		height: 26vw;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.middle {
+		margin-top: 10px;
+	}
+	
+	.left {
+		margin-right: 5px;
+	}
+	
+	.right {
+		margin-left: 5px;
+	}
+	
+	.village-thumbnail {
+		background-image: url(../images/vpr-brian.jpg);
+	}
+	
+	.candice-thumbnail {
+		background-image: url(../images/candice2.jpg);
+	}
+	
+	.stonewall-thumbnail {
+		background-image: url(../images/stonewall3.jpg);
+	}
+	
+	.vacant-thumbnail {
+		background-image: url(../images/vacant-2.jpg);
+	}
+	
+	.cut-thumbnail {
+		background-image: url(../images/CUT.jpg);
+	}
+	
+	.uh-thumbnail-1 {
+		background-image: url(../images/uh-be-bold.jpg);
+	}
+	
+	.uh-thumbnail-2 {
+		background-image: url(../images/urban-home-wonderland.jpg);
+	}
+	
+	.caption {
+		background-color: rgba(0,0,0, .8);
+		display: -webkit-flex;
+		-webkit-justify-content: center;
+		-webkit-align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s ease;
+	}
+	
+	#main-content a {
+		text-decoration: none;
+	}
+
+	.caption:hover {
+		opacity: 1;
+} 
+	
+	.caption ul {
+		padding: 10px;
+		border: 2px solid white;
+		list-style-type: none;
+	}
+	
+	.caption ul li {
+		font-size: .75em;
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: .2em;
+	}
+	
+	.italic {
+		font-style: italic;
+	}
+	/* NARRATIVE SECTION */ 
+	
+	#narrative-banner {
+		height: 45vw;
+		width: 100%;
+		background-image: url(../images/stonewall.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+	}
+	
+	#narrative-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-start;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(0,0,0,0) 45%, rgba(0,0,0, .7) 90%);
+	}
+	
+	#narrative-description {
+		width: 40%;
+		margin-left: 5%;
+	}
+	
+	#narrative-description h3 {
+		font-size: 2.25em;
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#narrative-description p {
+		color: white;
+		font-weight:100;
+		margin-top: 15px;
+	}
+	
+	#experimental-banner {
+		height: 45vw;
+		width: 100%;
+		background-image: url(../images/sb-beach.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 10px;
+	}
+	
+	#experimental-box-container {
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 15%, rgba(22,23,27, .7) 60%);
+	}
+	
+	#experimental-description {
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	#experimental-description h3 {
+		text-transform: uppercase;
+		font-size: 2.25em;
+		letter-spacing: .15em;
+		color: white;
+	}
+	
+	#experimental-description p {
+		color: white;
+		font-weight: 100;
+		margin-top: 15px;
+	}
+
 }
